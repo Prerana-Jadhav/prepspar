@@ -2,6 +2,8 @@
 
 PrepSpar is an AI-powered mock interview platform. It reads a candidate's resume, generates a fresh set of interview questions tailored to their actual skills and experience, conducts a spoken interview with a webcam-recorded session, offers real-time AI hints if the candidate goes quiet for too long, and produces a scored performance report at the end.
 
+**Live Demo:** [https://prepspar.onrender.com/](https://prepspar.onrender.com/)
+
 ## Features
 
 - **Resume-Aware Question Generation** — Upload a PDF or DOCX resume. The app extracts your skills and likely role, then calls an LLM to generate a unique, non-repeating set of interview questions every session (falls back to a curated static question bank if the AI call is unavailable).
