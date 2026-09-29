@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PrepSpar — Practice Interviews with an AI Interviewer</title>
+  <%- include('partials/head') %>
+  <link rel="stylesheet" href="/static/css/home.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <%- include('partials/navbar', { active: 'home' }) %>
+
+    <main class="content-wrap">
+      <section class="hero">
+        <div>
+          <div class="eyebrow">AI Mock Interviews</div>
+          <h1>Get interview-ready with questions <span class="gradient-text">built from your own resume.</span></h1>
+          <p>PrepSpar reads your resume, generates a fresh set of interview questions tailored to your skills, listens to your spoken answers, nudges you with a hint if you get stuck, and gives you an honest performance report at the end.</p>
+          <div class="hero-actions">
+            <a href="/login" class="btn btn-primary btn-lg">Start Practicing — It's Free</a>
+            <a href="/tips" class="btn btn-outline btn-lg">See Interview Tips</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><b>25+</b><span>Skill Domains Covered</span></div>
+            <div class="stat"><b>Dynamic</b><span>Questions Every Session</span></div>
+            <div class="stat"><b>Real-Time</b><span>AI Hints When You're Stuck</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img class="slide" src="/static/3d1.png" alt="" />
+          <img class="slide" src="/static/3d2.png" alt="" />
+          <img class="slide" src="/static/3d3.png" alt="" />
+          <img class="slide" src="/static/3d4.png" alt="" />
+          <img class="slide" src="/static/3d5.png" alt="" />
+          <img class="slide" src="/static/3d6.png" alt="" />
+          <img class="slide" src="/static/3d7.png" alt="" />
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="eyebrow">How it works</div>
+        <h2>Everything a real interview needs — minus the anxiety.</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="icon"><i class="uil uil-file-upload-alt"></i></div>
+            <h3>Resume-Aware Questions</h3>
+            <p>Upload a PDF or DOCX resume. We extract your real skills and experience and generate a dynamic, non-repeating question set with GPT — never the same static list twice.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon"><i class="uil uil-lightbulb-alt"></i></div>
+            <h3>Live AI Hints</h3>
+            <p>Stuck mid-answer? Our AI interviewer notices the silence and offers a short, non-spoiling nudge to help you keep going — just like a good human interviewer would.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon"><i class="uil uil-chart-growth-alt"></i></div>
+            <h3>Actionable Feedback</h3>
+            <p>Get a per-question score, model answers, and an overall performance breakdown so you know exactly what to improve before the real thing.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="section" style="padding-top:0;">
+        <div class="cta-band">
+          <div>
+            <h2>Ready to see how you'd actually perform?</h2>
+            <p style="color:rgba(255,255,255,0.85);">Sign up, upload your resume, and start your first AI mock interview in under two minutes.</p>
+          </div>
+          <a href="/login" class="btn btn-primary btn-lg">Get Started</a>
+        </div>
+      </div>
+    </main>
+
+    <%- include('partials/footer') %>
+  </div>
+
+  <script>
+    (function () {
+      const slides = document.querySelectorAll('.hero-visual .slide');
+      let index = 0;
+      slides[0].classList.add('active');
+      setInterval(() => {
+        slides[index].classList.remove('active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
+      }, 3000);
+    })();
+  </script>
+</body>
+</html>

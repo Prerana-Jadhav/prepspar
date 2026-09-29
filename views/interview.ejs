@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Interview — PrepSpar</title>
+  <%- include('partials/head') %>
+  <link rel="stylesheet" href="/static/css/interview.css" />
+</head>
+<body id="interview-page">
+  <div id="cont" data-candidate-name="<%= candidateName %>" data-candidate-role="<%= candidateRole %>" data-question-count="<%= questionCount %>">
+    <div class="interview-top">
+      <a href="/" class="brand">Prep<span style="color:var(--accent)">Spar</span></a>
+      <div class="timer-box"><span class="hour">00</span> : <span class="minute">00</span></div>
+      <button class="end-call-btn" id="end-call-btn" onclick="confirmEndCall()" style="display:none;">
+        <i class="uil uil-phone-slash"></i> End Call
+      </button>
+    </div>
+
+    <button class="start-btn" id="start-btn" onclick="beginInterview()">START</button>
+
+    <div class="call-wrapper" style="display:none;">
+      <div class="call-stage">
+        <div class="main-video-card">
+          <video id="int_vid" src="/static/interviewer.mp4" muted></video>
+          <span class="tag">AI Interviewer</span>
+          <div class="mic-indicator" id="mic-ai"><i class="uil uil-comment-alt-dots"></i></div>
+
+          <div class="self-view">
+            <video id="video" autoplay muted></video>
+            <span class="tag-sm">You</span>
+            <div class="mic-indicator sm" id="mic-you"><i class="uil uil-microphone"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-sidebar">
+        <div class="chat-header"><i class="uil uil-comments-alt"></i> Live Transcript</div>
+        <div class="chat-messages" id="chat-messages"></div>
+
+        <div class="controls-row">
+          <button class="btn btn-outline" id="hint-btn" onclick="requestHint()" style="display:none;">
+            <i class="uil uil-lightbulb-alt"></i> Need a hint?
+          </button>
+          <span id="status-text" style="color:var(--text-muted);font-size:14px;"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="download-video" id="download-card">
+      <h3>Interview complete</h3>
+      <p>Would you like to download a recording of your session?</p>
+      <div class="yn-btns">
+        <button class="btn btn-primary" onclick="downloadRecording()">Yes, download</button>
+        <button class="btn btn-outline" onclick="proceedToResults()">No, skip</button>
+      </div>
+    </div>
+
+    <div class="wait-btn" id="wait-card">
+      <span class="spinner"></span>
+      <p style="margin-top:16px;">Submitting your answers…</p>
+    </div>
+  </div>
+
+  <script src="/static/js/interview.js"></script>
+</body>
+</html>

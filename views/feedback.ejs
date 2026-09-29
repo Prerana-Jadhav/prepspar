@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Feedback — PrepSpar</title>
+  <%- include('partials/head') %>
+  <link rel="stylesheet" href="/static/css/feedback.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <%- include('partials/navbar', { active: 'feedback', user }) %>
+
+    <main class="content-wrap">
+      <div class="feedback-shell">
+        <% if (submitted) { %>
+          <div class="feedback-success">
+            <i class="uil uil-check-circle"></i>
+            <h1>Thanks for the feedback!</h1>
+            <p>We read every message and use it to improve PrepSpar.</p>
+            <a href="/" class="btn btn-primary" style="margin-top:16px;">Back to Home</a>
+          </div>
+        <% } else { %>
+          <div class="eyebrow" style="text-align:center;">We're Listening</div>
+          <h1>Tell us what to improve</h1>
+          <p class="subtitle">Found a bug, or have an idea for a feature? Let us know below.</p>
+
+          <form class="feedback-form" method="POST" action="/feedback">
+            <div class="field">
+              <label for="fb-name">Name</label>
+              <input type="text" id="fb-name" name="name" required />
+            </div>
+            <div class="field">
+              <label for="fb-email">Email</label>
+              <input type="email" id="fb-email" name="email" required />
+            </div>
+            <div class="field">
+              <label for="fb-message">Your Feedback</label>
+              <textarea id="fb-message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Feedback</button>
+          </form>
+        <% } %>
+      </div>
+    </main>
+
+    <%- include('partials/footer') %>
+  </div>
+</body>
+</html>

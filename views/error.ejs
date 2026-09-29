@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Error <%= code %> — PrepSpar</title>
+  <%- include('partials/head') %>
+</head>
+<body>
+  <div class="page-shell">
+    <%- include('partials/navbar') %>
+    <main class="content-wrap" style="display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:100px 20px;">
+      <div class="eyebrow">Error <%= code %></div>
+      <h1><%= message %></h1>
+      <a href="/" class="btn btn-primary" style="margin-top:20px;">Go Home</a>
+    </main>
+    <%- include('partials/footer') %>
+  </div>
+</body>
+</html>

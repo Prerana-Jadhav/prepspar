@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Log In — PrepSpar</title>
+  <%- include('partials/head') %>
+  <link rel="stylesheet" href="/static/css/login.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <%- include('partials/navbar', { active: 'login' }) %>
+
+    <main class="content-wrap auth-shell">
+      <div class="auth-card">
+        <div class="auth-tabs">
+          <button type="button" id="tab-login" class="active" onclick="switchTab('login')">Log In</button>
+          <button type="button" id="tab-signup" onclick="switchTab('signup')">Sign Up</button>
+        </div>
+
+        <form id="login-form" class="auth-form active" onsubmit="return false;">
+          <div class="field">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="login-pass">Password</label>
+            <div class="password-wrap">
+              <input type="password" id="login-pass" autocomplete="current-password" required />
+              <button type="button" class="password-toggle" onclick="togglePassword('login-pass', this)" aria-label="Show password">
+                <i class="uil uil-eye"></i>
+              </button>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" id="login-btn" onclick="login()">
+            <span class="btn-label">Log In</span>
+          </button>
+          <p class="status-msg" id="login-status"></p>
+        </form>
+
+        <form id="signup-form" class="auth-form" onsubmit="return false;">
+          <div class="field">
+            <label for="signup-name">Full Name</label>
+            <input type="text" id="signup-name" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="signup-pass">Password</label>
+            <div class="password-wrap">
+              <input type="password" id="signup-pass" autocomplete="new-password" minlength="6" required />
+              <button type="button" class="password-toggle" onclick="togglePassword('signup-pass', this)" aria-label="Show password">
+                <i class="uil uil-eye"></i>
+              </button>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" id="signup-btn" onclick="signup()">
+            <span class="btn-label">Create Account</span>
+          </button>
+          <p class="status-msg" id="signup-status"></p>
+        </form>
+      </div>
+    </main>
+
+    <%- include('partials/footer') %>
+  </div>
+
+  <script src="/static/js/login.js"></script>
+</body>
+</html>

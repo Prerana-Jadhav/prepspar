@@ -1,0 +1,21 @@
+<header class="site-nav">
+  <a href="/" class="brand">Prep<span>Spar</span></a>
+  <nav class="nav-links">
+    <a href="/" class="<%= typeof active !== 'undefined' && active === 'home' ? 'active' : '' %>">Home</a>
+    <a href="/about" class="<%= typeof active !== 'undefined' && active === 'about' ? 'active' : '' %>">About</a>
+    <a href="/tips" class="<%= typeof active !== 'undefined' && active === 'tips' ? 'active' : '' %>">Tips</a>
+    <a href="/feedback" class="<%= typeof active !== 'undefined' && active === 'feedback' ? 'active' : '' %>">Feedback</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" type="button">
+      <i class="theme-toggle-icon uil uil-moon"></i>
+    </button>
+    <% if (typeof user !== 'undefined' && user) { %>
+      <a href="/dashboard" class="btn btn-ghost">Dashboard</a>
+      <a href="/logout" class="btn btn-outline">Logout</a>
+    <% } else { %>
+      <a href="/login" class="btn btn-outline">Log In</a>
+      <a href="/login" class="btn btn-primary">Sign Up</a>
+    <% } %>
+  </div>
+</header>

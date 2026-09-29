@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dashboard — PrepSpar</title>
+  <%- include('partials/head') %>
+  <link rel="stylesheet" href="/static/css/dashboard.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="dash-header">
+      <a href="/" class="brand">Prep<span style="color:var(--accent)">Spar</span></a>
+      <div class="profile">
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" type="button">
+          <i class="theme-toggle-icon uil uil-moon"></i>
+        </button>
+        <span><%= profile %></span>
+        <div class="avatar-circle"><%= profile.charAt(0).toUpperCase() %></div>
+        <a href="/logout" class="btn btn-outline">Logout</a>
+      </div>
+    </header>
+
+    <main class="content-wrap">
+      <div class="upload-shell">
+        <span class="eyebrow">Step 1</span>
+        <h1>Upload your resume</h1>
+        <p>We'll extract your skills and generate a fresh, tailored set of interview questions — PDF or DOCX, up to 5MB.</p>
+
+        <label for="resume-input" class="upload-box" id="upload-box">
+          <i class="uil uil-cloud-upload"></i>
+          <p>Click to upload your resume</p>
+          <small>PDF or DOCX only</small>
+        </label>
+        <input type="file" id="resume-input" accept=".pdf,.doc,.docx" hidden />
+
+        <div id="file-chip-wrap"></div>
+
+        <div class="upload-actions">
+          <button class="btn btn-primary" id="submit-btn" onclick="uploadResume()" disabled>Analyze Resume</button>
+        </div>
+        <p class="status-msg" id="upload-status"></p>
+        <p class="status-msg error" id="upload-error"></p>
+
+        <div class="skill-section" id="skill-section">
+          <div class="role-wrap"><span class="role-tag" id="role-tag"></span></div>
+          <h2>Skills detected in your resume</h2>
+          <div class="skill-chips" id="skill-chips"></div>
+
+          <div class="continue-row">
+            <button class="btn btn-primary btn-lg" id="continue-btn" onclick="goToInterview()">Start Mock Interview</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('partials/footer') %>
+  </div>
+
+  <script src="/static/js/dashboard.js"></script>
+</body>
+</html>

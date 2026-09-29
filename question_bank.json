@@ -1,0 +1,458 @@
+[{
+  "_id": {
+    "$oid": "645a5e1bc1ed657f0a7ee6c0"
+  },
+  "skill": "nodejs",
+  "questions": [
+    "What is Node.js and how it works ? ",
+    "What is Node.js better than other frameworks most popularly used",
+    "Why is Node.js single-threaded",
+    "How many types of API functions are there in Node.js",
+    "What is the purpose of module.exports",
+    "What is an event-loop in Node JS",
+    "Differentiate between process.nextTick() and setImmediate()",
+    "What is node.js streams ?",
+    "What are node.js buffers ?",
+    "How are worker threads different from clusters"
+  ]
+},{
+  "_id": {
+    "$oid": "645a5edacd9838758ef9d97e"
+  },
+  "skill": "mysql",
+  "questions": [
+    "What is MySQL",
+    "What are some of the advantages of using MySQL",
+    "How can you interact with MySQL",
+    "How do you create a table using MySQL",
+    "What are the Numeric Data Types in MySQL",
+    "What are the MySQL clients and utilities",
+    "How do you create and execute views in MySQL",
+    "What are MySQL Triggers",
+    "Explain the logical architecture of MySQL",
+    "What is Scaling in MySQL",
+    "What are Transaction Storage Engines in MySQL"
+  ]
+},{
+  "_id": {
+    "$oid": "645a5ffa3f096d91d37fa9a0"
+  },
+  "skill": "oop",
+  "questions": [
+    "What is meant by the term OOPs",
+    "What is the need for OOPs",
+    "What are the various types of constructors in C++",
+    "What is Abstraction",
+    "What are the main features of OOPs",
+    "What are some advantages of using OOPs",
+    "What is meant by Inheritance",
+    "What is Polymorphism",
+    "What is Compile time Polymorphism and how is it different from Runtime Polymorphism",
+    "What is encapsulation",
+    "What is a class",
+    "What is an object"
+  ]
+},{
+  "_id": {
+    "$oid": "645a607aedbf8fde76e0fce9"
+  },
+  "skill": "computer network",
+  "questions": [
+    "Explain different types of networks",
+    "What are the advantages of using a VPN",
+    "What is an IPv4 address? What are the different classes of IPv4",
+    "Describe the OSI Reference Model",
+    "Describe the TCP/IP Reference Model",
+    "What are the HTTP and the HTTPS protocol",
+    "What is the DNS",
+    "What is the use of a router and how is it different from a gateway",
+    "Compare the hub vs switch",
+    "Compare between TCP and UDP"
+  ]
+},{
+  "_id": {
+    "$oid": "645a679244289de474879731"
+  },
+  "skill": "operating system",
+  "questions": [
+    "What is the operating system important",
+    "What is difference between Kernel and OS",
+    "What is Kernel and write its main functions",
+    "What do you mean by process synchronization",
+    "What is different between main memory and secondary memory",
+    "What is virtual memory",
+    "What is thread in OS",
+    "What is a process? What are the different states of a process",
+    "What is a Scheduling Algorithm? Name different types of scheduling algorithms",
+    "What is a deadlock in OS? What are the necessary conditions for a deadlock"
+  ]
+},{
+  "_id": {
+    "$oid": "645a687a4066318f09c33b4c"
+  },
+  "skill": "django",
+  "questions": [
+    "Explain Django Architecture",
+    "What are templates in Django or Django template language",
+    "What are views in Django",
+    "What is Jinja templating",
+    "What are Django URLs",
+    "What are different model inheritance styles in the Django",
+    "What is the difference between a project and an app in Django",
+    "What is Django Field Class",
+    "What are the ways to customize the functionality of the Django admin interface",
+    "What are Django exceptions"
+  ]
+},{
+  "_id": {
+    "$oid": "645a688c0cefbe141afcb10c"
+  },
+  "skill": "springboot",
+  "questions": [
+    "What are the advantages of using Spring Boot",
+    "What are the Spring Boot key components",
+    "Why Spring Boot over Spring",
+    "What is the starter dependency of the Spring boot module",
+    "How does Spring Boot works",
+    "What does the @SpringBootApplication annotation do internally",
+    "What is the purpose of using @ComponentScan in the class files",
+    "What are starter dependencies",
+    "What is Spring Initializer"
+  ]
+},{
+  "_id": {
+    "$oid": "645a68af65faab9052a9340f"
+  },
+  "skill": "angular",
+  "questions": [
+    "What is Angular Why was it introduced",
+    "What is TypeScript",
+    "What is data binding Which type of data binding does Angular deploy",
+    "What are Single Page Applications (SPA)",
+    "Differentiate between Angular and AngularJS",
+    "What are decorators in Angular?",
+    "Mention some advantages of Angular. What are the new updates with Angular10",
+    "What are Templates in Angular",
+    "What are Annotations in Angular"
+  ]
+},{
+  "_id": {
+    "$oid": "645a68d1f09177972b8b2f64"
+  },
+  "skill": "react",
+  "questions": [
+    "What are the advantages of ReactJS",
+    "What are the features of React",
+    "What are props in React",
+    "What is Context API in ReactJS",
+    "What are React Hooks",
+    "What is Context API in ReactJS",
+    "What are React Hooks",
+    "What are the limitations of React",
+    "What is JSX",
+    "What do you understand by Virtual DOM Explain its working",
+    "Why cant browsers read JSX",
+    "How different is Reacts ES6 syntax when compared to ES5",
+    "How is React different from Angular"
+  ]
+},{
+  "_id": {
+    "$oid": "645a68df8ee6a6b8b6bec6f2"
+  },
+  "skill": "html",
+  "questions": [
+    "What is HTML",
+    "What is the difference between HTML elements and tags",
+    "What are Attributes and how do you use them",
+    "When are comments used in HTML",
+    "What are the HTML tags used to display the data in  the tabular form",
+    "How to create a Hyperlink in HTML",
+    "Name some common lists that are used when  designing a page",
+    "What is semantic HTML",
+    "How to create a nested webpage in HTML",
+    "What is an image map"
+  ]
+},{
+  "_id": {
+    "$oid": "645a68f46788023ad8c51aad"
+  },
+  "skill": "css",
+  "questions": [
+    "What are the advantages of CSS",
+    "Explain the CSS components",
+    "Explain the different kinds of selectors and ways to  target the elements",
+    "Explain the CSS box model and its elements",
+    "Explain the preferred way of font sizing",
+    "What are the elements of the CSS Box Model",
+    "How can CSS be integrated into an HTML page",
+    "Explain a few advantages of CSS. What was the  purpose of developing CSS",
+    "What are the benefits of CSS Sprites",
+    "Name media types allowed by CSS"
+  ]
+},{
+  "_id": {
+    "$oid": "645a6b6fcce5314236cda54c"
+  },
+  "skill": "aws",
+  "questions": [
+    "explain the three basic types of cloud services",
+    "What is Amazon S3",
+    "How can you recover/login to an EC2 instance for which you have lost the key",
+    "What are the steps involved in a CloudFormation Solution",
+    "What services can be used to create a centralized logging solution",
+    "Define Amazon EC2 regions and availability zones",
+    "Define Snapshots",
+    "How many S3 buckets can be created",
+    "What is the maximum limit of elastic IPs anyone can produce",
+    "What are Key-Pairs in AWS"
+  ]
+},{
+  "_id": {
+    "$oid": "645a6b84c903730c2482f444"
+  },
+  "skill": "cyber security",
+  "questions": [
+    "What is cryptography",
+    "What is a firewall? Mention its uses",
+    "What are the common cyberattacks",
+    "What is data leakage",
+    "Explain port scanning",
+    "Explain brute force attack and the ways to prevent it",
+    "What are the different layers of the OSI model",
+    "What is a VPN",
+    "Who are White Hat, Grey Hat, and Black Hat Hackers",
+    "Explain the DDoS attack. How to prevent it"
+  ]
+},{
+  "_id": {
+    "$oid": "645a6b91b346938f857a8495"
+  },
+  "skill": "mongodb",
+  "questions": [
+    "What is MongoDB",
+    "What are some of the advantages of MongoDB",
+    "What is a Document in MongoDB",
+    "What is a Collection in MongoDB",
+    "What are Databases in MongoDB",
+    "How do you Update a Document",
+    "How do you Delete a Document",
+    "What are the data types in MongoDB",
+    "How to perform queries in MongoDB",
+    "What is the Mongo Shell"
+  ]
+},{
+  "_id": {
+    "$oid": "645a6baa854419b5c2612912"
+  },
+  "skill": "data science",
+  "questions": [
+    "What is Data Science",
+    "Differentiate Between Data Analytics and Data Science",
+    "What are the differences between supervised and unsupervised learning",
+    "How is logistic regression done",
+    "How should you maintain a deployed model",
+    "How should you maintain a deployed model",
+    "What are recommender systems",
+    "Explain the steps in making a decision tree.",
+    "How can you avoid overfitting your model",
+    "Differentiate between univariate, bivariate, and multivariate analysis"
+  ]
+},{
+  "_id": {
+    "$oid": "645a6bbcc4610ddc9e38f5b3"
+  },
+  "skill": "machine learning",
+  "questions": [
+    "What Are the Different Types of Machine Learning",
+    "How Do You Handle Missing or Corrupted Data in a Dataset",
+    "What are Neural Networks, and How Do They Relate to AI",
+    "What is Deep Learning, and How Does It Relate to AI",
+    "Why is Image Recognition a Key Function of AI",
+    "What is Automatic Programming",
+    "What Role Does Computer Vision Play in AI",
+    "What Are the Three Stages of Building a Model in Machine Learning",
+    "What Are the Differences Between Machine Learning and Deep Learning",
+    "What is Semi-supervised Machine Learning"
+  ]
+},{
+  "_id": {
+    "$oid": "645a6bcda6901ee06862a255"
+  },
+  "skill": "artificial intelligence",
+  "questions": [
+    "What Are the Different Types of Machine Learning",
+    "How Do You Handle Missing or Corrupted Data in a Dataset",
+    "What are Neural Networks, and How Do They Relate to AI",
+    "What is Deep Learning, and How Does It Relate to AI",
+    "Why is Image Recognition a Key Function of AI",
+    "What is Automatic Programming",
+    "What Role Does Computer Vision Play in AI",
+    "What Are the Three Stages of Building a Model in Machine Learning",
+    "What Are the Differences Between Machine Learning and Deep Learning",
+    "What is Semi-supervised Machine Learning"
+  ]
+},{
+  "_id": {
+    "$oid": "645a6df9b71ee2d9567ccc6f"
+  },
+  "skill": "dbms",
+  "questions": [
+    "What is DBMS?",
+    "What is a database?",
+    "What is a database system?",
+    "What are the advantages of DBMS?",
+    "What is a checkpoint in DBMS?",
+    "When does checkpoint occur in DBMS?",
+    "What do you mean by transparent DBMS?",
+    "What are the unary operations in Relational Algebra?",
+    "Tell the issues with traditional file approach",
+    "What are the different types of entities"
+  ]
+},{
+  "_id": {
+    "$oid": "645a6e0ffec103ec14c27c1e"
+  },
+  "skill": "data structure",
+  "questions": [
+    "What are Data Structures?",
+    "tell primitive data types",
+    "Tell Nonprimitive data types",
+    "What is Stack",
+    "What is Queue",
+    "What is LinkedList",
+    "What is Tree",
+    "What is a Graph",
+    "tell some searching techniques",
+    "Tell some Sorting methods"
+  ]
+},{
+  "_id": {
+    "$oid": "645a6e19ddc28d2b81607e6e"
+  },
+  "skill": "salesforce",
+  "questions": [
+    "What is Salesforce",
+    "What is a custom object in Salesforce",
+    "What does a custom object permit the user to do",
+    "What is Object Relationship Overview",
+    "What can cause data loss in Salesforce",
+    "How is SaaS beneficial to Salesforce",
+    "How does Salesforce track sales",
+    "How many types of relationships are offered by Salesforce.com",
+    "What is the trigger",
+    "What are the different types of reports available in Salesforce"
+  ]
+},{
+  "_id": {
+    "$oid": "645a6e204a5430ba2940bec3"
+  },
+  "skill": "android",
+  "questions": [
+    "What is Android",
+    "What are the features of Android architecture",
+    "Tell some languages used to build Android",
+    "What is a service in Android",
+    "What is an activity",
+    "What is Google Android SDK",
+    "Which are the tools placed in Android SDK",
+    "What is Long from of AAPT in android",
+    "What is Long from of AIDL in android",
+    "What is Long from of DDMS in android"
+  ]
+},{
+  "_id": {
+    "$oid": "645b065ba085022c2373de5d"
+  },
+  "skill": " c ",
+  "questions": [
+    "Why is C called a mid-level programming language",
+    "What are the features of the C language",
+    "What is a token",
+    "What is the use of printf() and scanf() functions? Also explain format specifiers?",
+    "What is a built-in function in C",
+    "In C, What is the # used for",
+    "What is recursion in C",
+    "What is a pointer in C",
+    "Can we compile a program without a main() function",
+    "What is the use of a semicolon at the end of every program statement"
+  ]
+},{
+  "_id": {
+    "$oid": "645b06a24d00279affc8c1fc"
+  },
+  "skill": "c++",
+  "questions": [
+    "What is the difference between C and C++",
+    "What are class and object in C++",
+    "What is polymorphism in C++",
+    "What are the types of the constructors in C++",
+    "What are the access specifiers in C++",
+    "Define Inline function",
+    "What do you mean by abstraction in C++",
+    "What is destructor in C++",
+    "What is copy constructor in C++",
+    "What is an abstract Class"
+  ]
+},{
+  "_id": {
+    "$oid": "645b06d2a3c167c47e998f66"
+  },
+  "skill": "java",
+  "questions": [
+    "What are the features of the java",
+    "What is JDK",
+    "Why java is platform independent",
+    "Types of inheritance in java",
+    "Why multiple inheritance is not supported by java",
+    "What is meant by Interface",
+    "What is meant by Abstract class",
+    "What is the meaning of Collections in Java",
+    "What is meant by Exception",
+    "What are the types of Exceptions"
+  ]
+},{
+  "_id": {
+    "$oid": "645b06f3a25b55de0aec9431"
+  },
+  "skill": "python",
+  "questions": [
+    "What is python",
+    "Python is an interpreted language. Explain",
+    "What is List in python",
+    "What is tuples in python",
+    "What is Dictionary in python",
+    "What is type conversion in python",
+    "How the program lines are commented in python",
+    "What are the key features of the python",
+    "What are the applications of the python",
+    "How to remove whitespaces in Python"
+  ]
+},{
+  "skill": "c#",
+  "questions": [
+    "How the C# is different from C",
+    "What is common language runtime (CLR)",
+    "What is garbage collector in C#",
+    "What are the types of classes in C#",
+    "What is Abstract class in C#",
+    "What is the interface in C#",
+    "What is Enum in C#",
+    "Can this be used in static method",
+    "What is partial class in C#",
+    "What is the function of thread support in common language runtime (CLR)"
+  ]
+},{
+  "skill": "javascript",
+  "questions": [
+    "What are the different data types present in javascript?",
+    "Difference between “== “ and “=== “ operators.",
+    "Difference between var and let keyword in javascript.",
+    "Who developed JavaScript",
+    "Tell some features of JavaScript",
+    "How to use external JavaScript file?",
+    "Is the JavaScript is case Sensitive Language",
+    "What is Document object model in JavaScript",
+    "What is used to print a line on console in JavaScript",
+    "How to Write a comment in JavaScript"
+  ]
+}]

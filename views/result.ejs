@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Results — PrepSpar</title>
+  <%- include('partials/head') %>
+  <link rel="stylesheet" href="/static/css/result.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="dash-header">
+      <a href="/" class="brand">Prep<span style="color:var(--accent)">Spar</span></a>
+      <div class="profile">
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" type="button">
+          <i class="theme-toggle-icon uil uil-moon"></i>
+        </button>
+        <a href="/dashboard" class="btn btn-outline">Back to Dashboard</a>
+      </div>
+    </header>
+
+    <main class="content-wrap">
+      <div class="wait-box" id="wait-box">
+        <span class="spinner"></span>
+        <h2 style="margin-top:20px;">Analyzing your performance…</h2>
+        <p>Our AI is scoring your answers against model responses.</p>
+      </div>
+
+      <div class="result-shell" id="result-shell" style="display:none;">
+        <div class="eyebrow" style="text-align:center;">Performance Report</div>
+        <h1>Here's how you did</h1>
+
+        <div class="score-grid" id="score-grid"></div>
+        <div class="qa-list" id="qa-list"></div>
+      </div>
+    </main>
+
+    <%- include('partials/footer') %>
+  </div>
+
+  <script src="/static/js/result.js"></script>
+</body>
+</html>

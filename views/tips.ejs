@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Interview Tips — PrepSpar</title>
+  <%- include('partials/head') %>
+  <link rel="stylesheet" href="/static/css/content.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <%- include('partials/navbar', { active: 'tips', user }) %>
+
+    <main class="content-wrap">
+      <div class="page-header">
+        <div class="eyebrow">Interview Tips</div>
+        <h1>Small habits that make a <span class="gradient-text">big difference.</span></h1>
+      </div>
+
+      <section class="section">
+        <div class="tip-list">
+          <% const tips = [
+            ["Research the Company", "Study the company's background, values, products, and recent news. It signals genuine interest and helps you tailor your answers."],
+            ["Practice Out Loud", "Speaking your answers, not just thinking them, is what PrepSpar's mock sessions are for — it builds the muscle memory you need under pressure."],
+            ["Dress the Part", "Match your attire to the company's culture. A polished appearance sets a confident tone before you say a word."],
+            ["Lead With Evidence", "Back up every claimed skill with a concrete example or number. Specifics are what interviewers actually remember."],
+            ["Ask Thoughtful Questions", "Prepare 2-3 questions about the team or role. It shows you're evaluating the fit, not just hoping to be picked."],
+            ["Mind Your Body Language", "Eye contact, a steady posture, and a firm handshake communicate confidence before your answers do."],
+            ["Follow Up", "Send a short, personalized thank-you note within 24 hours. It's a small effort with an outsized impression."]
+          ]; %>
+          <% tips.forEach((tip, i) => { %>
+            <div class="tip-card">
+              <div class="tip-number"><%= String(i + 1).padStart(2, '0') %></div>
+              <div>
+                <h3><%= tip[0] %></h3>
+                <p><%= tip[1] %></p>
+              </div>
+            </div>
+          <% }) %>
+        </div>
+      </section>
+    </main>
+
+    <%- include('partials/footer') %>
+  </div>
+</body>
+</html>

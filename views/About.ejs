@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About — PrepSpar</title>
+  <%- include('partials/head') %>
+  <link rel="stylesheet" href="/static/css/content.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <%- include('partials/navbar', { active: 'about', user }) %>
+
+    <main class="content-wrap">
+      <div class="page-header">
+        <div class="eyebrow">About Us</div>
+        <h1>Helping candidates walk into interviews <span class="gradient-text">prepared, not anxious.</span></h1>
+      </div>
+
+      <section class="section prose">
+        <p>PrepSpar started as a simple idea: interview prep shouldn't rely on a generic list of questions you've already memorized the answers to. Real interviews adapt to <em>you</em> — your resume, your skills, your experience — and your practice should too.</p>
+        <p>We built an AI interviewer that reads your resume, asks you questions actually relevant to your background, listens to how you answer, and steps in with a hint if you go quiet for too long — the same way a thoughtful human interviewer would.</p>
+
+        <h2 style="margin-top:48px;">Meet the Founder</h2>
+        <div class="founder-card">
+          <img class="founder-photo" src="/static/prerana-jadhav.jpg" alt="Prerana Jadhav" />
+          <h4>Prerana Jadhav</h4>
+          <span>Founder & Engineer</span>
+        </div>
+      </section>
+    </main>
+
+    <%- include('partials/footer') %>
+  </div>
+</body>
+</html>

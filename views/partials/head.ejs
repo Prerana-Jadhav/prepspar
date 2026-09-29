@@ -1,0 +1,32 @@
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>
+  // Applied before CSS loads so the correct theme paints immediately (no flash).
+  (function () {
+    var stored = null;
+    try { stored = localStorage.getItem('prepspar-theme'); } catch (e) {}
+    document.documentElement.setAttribute('data-theme', stored === 'dark' ? 'dark' : 'light');
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css" />
+<link rel="stylesheet" href="/static/css/base.css" />
+<script>
+  function toggleTheme() {
+    var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('prepspar-theme', next); } catch (e) {}
+    document.querySelectorAll('.theme-toggle-icon').forEach(function (icon) {
+      icon.className = 'theme-toggle-icon uil ' + (next === 'dark' ? 'uil-sun' : 'uil-moon');
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function () {
+    var current = document.documentElement.getAttribute('data-theme');
+    document.querySelectorAll('.theme-toggle-icon').forEach(function (icon) {
+      icon.className = 'theme-toggle-icon uil ' + (current === 'dark' ? 'uil-sun' : 'uil-moon');
+    });
+  });
+</script>
+<script src="/static/js/ui.js"></script>

@@ -1,0 +1,10 @@
+.feedback-shell { max-width: 560px; margin: 0 auto; padding: 64px 20px; }
+.feedback-shell h1 { text-align: center; }
+.feedback-shell > p.subtitle { text-align: center; }
+.feedback-form { margin-top: 32px; }
+.feedback-form button { width: 100%; }
+.feedback-success {
+  text-align: center;
+  padding: 48px 20px;
+}
+.feedback-success i { font-size: 48px; color: var(--success); }

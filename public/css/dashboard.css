@@ -1,0 +1,70 @@
+
+.upload-shell {
+  max-width: 720px;
+  margin: 56px auto;
+  padding: 0 20px;
+}
+.upload-shell .eyebrow { text-align: center; display: block; }
+.upload-shell h1 { text-align: center; }
+.upload-shell > p { text-align: center; }
+
+.upload-box {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  text-align: center;
+  margin-top: 32px;
+  transition: border-color 0.2s ease;
+  cursor: pointer;
+}
+.upload-box:hover { border-color: var(--accent); }
+.upload-box i { font-size: 40px; color: var(--accent); }
+.upload-box p { margin-top: 12px; font-weight: 600; color: var(--text); }
+.upload-box small { color: var(--text-muted); }
+
+.file-chip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  margin-top: 18px;
+}
+.file-chip .name { font-weight: 600; font-size: 14px; }
+.file-chip .remove { cursor: pointer; color: var(--text-muted); font-size: 18px; }
+
+.upload-actions { text-align: center; margin-top: 24px; display: flex; gap: 12px; justify-content: center; align-items: center; }
+
+.skill-section { margin-top: 48px; display: none; }
+.skill-section.visible { display: block; }
+.skill-section h2 { text-align: center; font-size: 18px; }
+.role-tag {
+  display: inline-flex;
+  margin: 0 auto 16px;
+  background: var(--accent-gradient);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.role-wrap { text-align: center; }
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
+}
+.skill-chip {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.continue-row { text-align: center; margin-top: 40px; }
